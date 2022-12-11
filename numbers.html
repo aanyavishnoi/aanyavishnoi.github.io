@@ -1,0 +1,111 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body style="background-color: skyblue">
+  <a href="./index.html"> Click here to go back</a>
+  <h1> Squares</h1>
+  <p id="squares"></p>
+  
+  <h1> Twos</h1>
+  <p id="twos"></p>
+
+  <h1> Threes</h1>
+  <p id="threes"></p>
+
+  <h1> Fours</h1>
+  <p id="fours"></p>
+
+  <h1> Fives</h1>
+  <p id="fives"></p>
+
+  <h1> Six</h1>
+  <p id="six"></p>
+
+  <h1> Seven</h1>
+  <p id="seven"></p>
+
+  <h1> Eight</h1>
+  <p id="eight"></p>
+
+  <h1> Nine</h1>
+  <p id="nine"></p>
+
+  <a href="./index.html"> Click here to go back</a>
+
+
+    <script>
+      //Squares
+      let squaresRow="";
+      for (let i = 1; i <= 9; i++) {
+        squaresRow += "<tr><td>"+ i + "x" + i + "</td><td>"+ i*i +"</td></tr>"
+      }
+      document.getElementById("squares").innerHTML = "<table border=1><tr><th>Number </th><th>Result</th></tr>" + squaresRow + " </table>";
+      //end squares
+
+       //twos
+       let towsRow="";
+      for (let i = 2; i <= 9; i++) {
+        towsRow += "<tr><td>"+ 2 + "x" + i + "</td><td>"+ 2*i +"</td></tr>"
+      }
+      document.getElementById("twos").innerHTML = "<table border=1><tr><th>Number </th><th>Result</th></tr>" + towsRow + " </table>";
+      //end twos
+
+      //thress
+      let threesRow="";
+      for (let i = 2; i <= 9; i++) {
+        threesRow += "<tr><td>"+ 3 + "x" + i + "</td><td>"+ 3*i +"</td></tr>"
+      }
+      document.getElementById("threes").innerHTML = "<table border=1><tr><th>Number </th><th>Result</th></tr>" + threesRow + " </table>";
+      //end threes
+//fours
+let foursRow="";
+      for (let i = 2; i <= 9; i++) {
+        foursRow += "<tr><td>"+ 4 + "x" + i + "</td><td>"+ 4*i +"</td></tr>"
+      }
+      document.getElementById("fours").innerHTML = "<table border=1><tr><th>Number </th><th>Result</th></tr>" + foursRow + " </table>";
+      //end fours
+//fives
+let fivesRow="";
+      for (let i = 2; i <= 9; i++) {
+        fivesRow += "<tr><td>"+ 5 + "x" + i + "</td><td>"+ 5*i +"</td></tr>"
+      }
+      document.getElementById("fives").innerHTML = "<table border=1><tr><th>Number </th><th>Result</th></tr>" + fivesRow + " </table>";
+      //end fives
+//six
+let sixRow="";
+      for (let i = 2; i <= 9; i++) {
+        sixRow += "<tr><td>"+ 6 + "x" + i + "</td><td>"+ 6*i +"</td></tr>"
+      }
+      document.getElementById("six").innerHTML = "<table border=1><tr><th>Number </th><th>Result</th></tr>" + sixRow + " </table>";
+      //end six
+//seven
+let sevenRow="";
+      for (let i = 2; i <= 9; i++) {
+        sevenRow += "<tr><td>"+ 7 + "x" + i + "</td><td>"+ 7*i +"</td></tr>"
+      }
+      document.getElementById("seven").innerHTML = "<table border=1><tr><th>Number </th><th>Result</th></tr>" + sevenRow + " </table>";
+      //end seven
+//eight
+let eightRow="";
+      for (let i = 2; i <= 9; i++) {
+        eightRow += "<tr><td>"+ 8 + "x" + i + "</td><td>"+ 8*i +"</td></tr>"
+      }
+      document.getElementById("eight").innerHTML = "<table border=1><tr><th>Number </th><th>Result</th></tr>" + eightRow + " </table>";
+      //end eight
+      //eight
+let nineRow="";
+      for (let i = 2; i <= 9; i++) {
+        nineRow += "<tr><td>"+ 9 + "x" + i + "</td><td>"+ 9*i +"</td></tr>"
+      }
+      document.getElementById("nine").innerHTML = "<table border=1><tr><th>Number </th><th>Result</th></tr>" + nineRow + " </table>";
+      //end nine
+
+    </script>
+</body>
+
+</html>
