@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body style="background-color: aliceblue">
+  <a href="./index.html"> Click here to go back</a>
+
+  <h1 style="color: green;"> What is the result of the multiplication of these two numbers?? </h1>
+  <h3 style="color: crimson;"> You have 3 seconds to guess. your time starts now!!!</h3>
+
+
+  <h1 style="display: inline-block" id="firstNumber"></h1> 
+  <h1 style="display: inline-block">x</h1>
+  <h1 style="display: inline-block" id="secondNumber"></h1>
+  <h1 style="display: inline-block">=</h1>
+  <h1 style="display: inline-block" id="result">?</h1>
+  <h1 id="message" style="color: goldenrod;"></h1>
+  <h1 id="button"></h1>
+
+
+
+  <p> <a href="./index.html"> Click here to go back</a></p>
+ 
+
+
+    <script>
+      //Squares
+      let firstNumber=Math.floor(Math.random() * 10);
+      let secondNumber=Math.floor(Math.random() * 10);
+
+      document.getElementById("firstNumber").innerHTML = firstNumber;
+      document.getElementById("secondNumber").innerHTML = secondNumber;
+
+      myTimeout = setTimeout(myFunction, 3000);
+      
+      //end squares
+      function myFunction() {
+        let result = firstNumber * secondNumber;
+        document.getElementById("result").innerHTML = result;
+        document.getElementById("message").innerHTML = "Did you get it right or not? ";
+        document.getElementById("button").innerHTML = "<button type=\"submit\" onClick=\"refreshPage()\">Cick here to TRY AGAIN</button>";
+
+       // alert('Hello');
+      }
+
+      function refreshPage(){
+          window.location.reload();
+      } 
+
+    </script>
+</body>
+
+</html>
